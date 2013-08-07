@@ -1,0 +1,25 @@
+{
+    "name": "Shutterstock statistic",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Extension for retrieve statistic from active session on Shutterstock",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "default_locale": "en",
+    "background": {
+        "page": "background.html"
+    },
+    "browser_action": {
+        "default_title": "Shutterstock statistic",
+        "default_popup": "browser-action.html"
+    },
+    "permissions": [
+        "cookies",
+        "tabs",
+        "https://*/*",
+        "http://*/*"
+    ]
+}
