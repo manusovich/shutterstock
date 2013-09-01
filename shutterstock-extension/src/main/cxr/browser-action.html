@@ -5,22 +5,36 @@
     <script type="text/javascript" src="shutterstock.js"></script>
     <script type="text/javascript" src="browser-action.js"></script>
     <style type="text/css">
-        #mainPopup {
-            padding: 10px;
-            height: 200px;
-            width: 400px;
-            font-family: Helvetica, Ubuntu, Arial, sans-serif;
+        body {
+            font-size: 14px;
         }
-        h1 {
-            font-size: 2em;
+        .header {
+            padding-bottom: 5px;
+        }
+        .earnings {
+            float: right;padding-right: 30px;
+        }
+        #output {
+            padding-top: 30px;
         }
     </style>
 </head>
 <body>
+<base target="_blank" />
 <canvas id="canvas" width="19" height="19" style="display:none">
     Your user agent does not support the HTML5 Canvas element.
 </canvas>
-<h1><span id="cnt"></span></h1>
-<div id="output" style="width:340px"></div>
+<div class="header">
+    Today's statistic:
+</div>
+<div>
+    <div style="float: left">
+        Shutterstock: <span id="shutterstock-cnt">-</span> downloads
+    </div>
+    <div class="earnings" style="">
+        <span id="shutterstock-earnings">-</span>
+    </div>
+</div>
+<div id="output" style="width:400px"></div>
 </body>
 </html>
